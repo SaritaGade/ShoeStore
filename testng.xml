@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="utilities.TestListener" />
+	</listeners>
+
+	<test thread-count="5" enabled="true" name="HomePage">
+		<classes>
+			<class name="shoeStore_TC.LaunchBrowserTest" />
+			<class name="shoeStore_TC.TC03_EmailVerificationforHomePage" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" enabled="false" name="Functional">
+		<classes>
+			<class name="shoeStore_TC.LaunchBrowserTest" />
+			<class name="shoeStore_TC.TC03_EmailVerificationforHomePage" />
+			<class name="shoeStore_TC.TC01_ChooseBrand" />
+			<class name="shoeStore_TC.TC02_MonthWiseProductValidation" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
